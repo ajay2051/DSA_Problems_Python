@@ -89,6 +89,7 @@ class LinkedList:
             if count == index - 1:
                 itr.next = itr.next.next
                 break
+            itr = itr.next
             count += 1
 
     def print(self):
