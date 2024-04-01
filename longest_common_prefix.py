@@ -7,8 +7,8 @@ def longest_common_prefix(strs):
         # after sort: ['fake', 'flight', 'flow', 'flower']
         first, last = strs[0], strs[-1]
         for i in range(len(first)):
-            if len(last) > i and last[i] == first[i]:
-                longest_pre.append(last[i])
+            if len(first) > i and first[i] == last[i]:
+                longest_pre.append(first[i])
             else:
                 return "".join(longest_pre)
     return "".join(longest_pre)
